@@ -41,6 +41,7 @@ describe('AppointmentsDayView', () => {
     }
     beforeEach(() => {
         container = document.createElement('div');
+        document.body.replaceChildren(container);
     });
     it('renders a div with the right id', () => {
         render(<AppointmentsDayView appointments={[]} />);
